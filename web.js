@@ -9,7 +9,7 @@ var resp = fs.readFile('index.html', function (err, data) {
   return data.toString();
 });
 
-  response.send(data);
+  response.send(resp);
 });
 
 var port = process.env.PORT || 5000;
