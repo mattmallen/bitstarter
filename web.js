@@ -5,7 +5,7 @@ var Buffer = require('Buffer');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-var resp = fs.readFile('/etc/passwd', function (err, data) {
+var resp = fs.readFile('index.html', function (err, data) {
   if (err) throw err;
   return data;
 });
